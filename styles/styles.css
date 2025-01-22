@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* shared styles */
+.display-flex{
+    display: flex;
+}
+.clr-orange{
+    color: orange;
+}
+.clr-blue{
+    color: skyblue;
+}
+
+.btn-primary:hover, .btn-enroll:hover,.hamburger:hover{
+    background-color: rgb(132, 233, 141);
+}
+  /* navbar styles */
+.navbar{
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.logo-cat{
+    max-height: 13rem;
+    max-width: 13rem;
+}
+.logo-title{
+    font-weight: bold;
+    font-size: 1.25rem;  
+}
+.nav-link-home{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: orange;
+}
+.nav-link-abt{
+    font-size: 1.25rem;
+    font-weight: medium;
+    color: rgb(32, 161, 211);
+}
+.nav-link-facility{
+    font-size: 1.25rem;
+    font-weight: medium;
+    color: #05D4DF;
+}
+.nav-link-ad{
+    font-size: 1.25rem;
+    font-weight: medium;
+    color:#5D58EF;
+
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link-home, .nav-link-abt, .nav-link-facility, .nav-link-ad{
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    height: 3rem;
+    width: 12rem;
+    border: none;
+}
+.hamburger{
+    display: none;   
+}
+
+/* banner styles */
+.banner{
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto; 
+    position: relative;
+}
+.banner-text{
+    max-width: 640px;
+    margin:0 auto;
+}
+.banner-title{
+    font-weight: bold;
+    font-size:3.5rem;
+    margin:0;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1.25rem; 
+}
+.btn-enroll{
+    background-color:black;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    height: 3rem;
+    width: 12rem;
+    border: none;
+}
+.banner-img{
+    max-width: 100%;
+    padding : 0; 
+    margin:auto;
+}
+/* curriculum styles */
+.curr-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.curriculum-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* responsive for phone screen */
+@media screen and (max-width:576px) {
+    /*banner styles  */
+    .banner{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;  
+        flex-wrap: wrap; 
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        text-align: center;
+    }
+    .nav-links, .logo-title, .btn-primary{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid orange;
+        padding: 0 1rem;
+        
+    }
+    .hamburger{
+        display: block;
+        font-size: 35px;
+        
+    }
+    .banner-img{ 
+        height: auto;
+        transform: scale(0.8);
+        max-width: 100%;
+        position: relative; 
+        right: 5%;
+        align-items: center ;
+        justify-content: center;
+        object-fit: contain;  
+                 
+    }    
+}
