@@ -239,6 +239,14 @@
 .foot{
     background-color: #01ACFD;
     display:flex;
+    justify-content:space-evenly ;   
+    padding: 100px 50px 100px 50px;
+}
+.first-column{
+    max-width: 25rem;
+}
+.nav-item{
+    padding-bottom: 10px;
 }
 
 #kids-title,#description,.nav-link,.abt-school{
