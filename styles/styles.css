@@ -6,6 +6,7 @@
     font-style: normal;
   }
   /* shared styles */
+
 .display-flex{
     display: flex;
 }
@@ -128,6 +129,11 @@
     margin:0 auto;
 }
 /* curriculum styles */
+.marquee-tag{
+    margin-top: 20px;
+    font-size: 4rem;
+    font-weight: bold;
+}
 .curriculum{
     background-image:url('../assets/bg.png');
     margin: 60px 0;
@@ -248,8 +254,14 @@
 .nav-item{
     padding-bottom: 10px;
 }
+.nav-links-foot{
+    padding:0px;
+}
+.second-column{
+    justify-content: left;
+}
 
-#kids-title,#description,.nav-link,.abt-school{
+#kids-title,#description,.nav-link,.abt-school,#keep-text{
     color: white;
 }
 /* responsive for phone screen */
@@ -312,6 +324,15 @@
         align-items: center;
     }
     /* footer styles */
-
+    .foot{
+        flex-direction: column;
+    }
+    .second-column{
+        padding:0px;
+    }
+    .nav-links-foot{
+        display: block;
+        padding: 0px;
+    }
     
 }
