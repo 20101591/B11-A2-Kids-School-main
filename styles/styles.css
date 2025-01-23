@@ -72,7 +72,8 @@
     color:#5D58EF;
 
 }
-.nav-item{
+.nav-item,.nav-link{
+    text-decoration: none;
     list-style: none;
     margin-right: 30px;
 }
@@ -234,7 +235,15 @@
     align-items: center;
     padding: 5rem;
 }
+/* footer styles */
+.foot{
+    background-color: #01ACFD;
+    display:flex;
+}
 
+#kids-title,#description,.nav-link,.abt-school{
+    color: white;
+}
 /* responsive for phone screen */
 @media screen and (max-width:576px) {
     /*banner styles  */
@@ -294,5 +303,7 @@
         justify-items: center;
         align-items: center;
     }
+    /* footer styles */
 
+    
 }
