@@ -357,6 +357,9 @@
         align-items: center;
         gap:7px;
     }
+    .btn-date{
+        margin-left:1rem;
+    }
     /* footer styles */
     .foot{
         flex-direction: column;
